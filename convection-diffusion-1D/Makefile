@@ -1,6 +1,6 @@
 CC = g++
-EXE = calc
-OBJ = with_source.o
+EXE = calc.exe
+OBJ = calculate.o
 
 $(EXE):$(OBJ)
 	$(CC) -o $(EXE) -L/usr/local/lib $(OBJ) -lgsl -lgslcblas -lm

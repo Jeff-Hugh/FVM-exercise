@@ -4,15 +4,15 @@ using namespace std;
 
 int main()
 {
-	const double L = 0.1; /// total length
+	const double L = 1; /// total length
 	const double A = 1; /// sectional area
 	const double phi_0 = 1; /// boundary condition A
 	const double phi_L = 0; /// boundary condition B
 	const double rho = 1; /// dencity, kg/m^3
 	const double gamma = 0.1;    /// diffusion coefficience, kg/(m*s)
-	const double u = 0.1;    /// velocity, m/s
+	const double u = 2.5;    /// velocity, m/s
 
-	const int N = 5;  /// number of grid 
+	const int N = 20;  /// number of grid 
 	double dx = L/N;
  
 	double diag_data[N]; // diagonal of coefficient matrix
